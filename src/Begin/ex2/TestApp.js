@@ -1,7 +1,6 @@
 import React, { useRef, useMemo, useCallback, useReducer } from 'react';
 import UserList from './UserList';
 import CreateUser from './CreateUser';
-import useInputs from '../components/useInputs';
 import produce from 'immer';
 
 function countActiveUsers(users) {

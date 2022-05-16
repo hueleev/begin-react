@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useUsersState, useUsersDispatch, getUsers } from './UsersContext';
 import User from './User';
 
-function Users() {
+function UserApp() {
 	const [userId, setUserId] = useState(null);
 	const state = useUsersState();
 	const dispatch = useUsersDispatch();
@@ -31,4 +31,4 @@ function Users() {
 	);
 }
 
-export default Users;
+export default UserApp;

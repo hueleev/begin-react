@@ -14,7 +14,6 @@ const profileData = {
 };
 
 const Profile = () => {
-	// 파라미터를 받아올 땐 match 안에 들어있는 params 값을 참조합니다.
 	const { username } = useParams();
 	const profile = profileData[username];
 	if (!profile) {
