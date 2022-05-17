@@ -27,7 +27,7 @@ console.log(store.getState());
 root.render(
 	// <React.StrictMode>
 
-	<BrowserRouter>
+	<BrowserRouter basename="/begin-react">
 		<Routes>
 			<Route path="/todo" element={<ToDoApp />} />
 			<Route
