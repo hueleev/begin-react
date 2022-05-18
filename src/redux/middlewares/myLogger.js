@@ -1,6 +1,11 @@
+// 사용 안함.. redux-logger 로 대체
 const myLogger = store => next => action => {
 	console.log(action); // 액션을 먼저 출력합니다.
 	const result = next(action); // 다음 미들웨어 (또는 리듀서) 에게 액션을 전달합니다.
+
+	// 업데이트 이후의 상태를 조회합니다.
+	/* console.log('\tstate:', store.getState());
+	console.log('\t\tresult:', result); */
 	return result; // 여기서 반환하는 값은 dispatch(action)의 결과물이 됩니다. 기본: undefined
 };
 
